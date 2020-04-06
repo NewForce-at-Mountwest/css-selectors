@@ -1,0 +1,96 @@
+/* 4. In style.css, select your footer element by its tag name and give it a background color of blue and a height of 20vh.
+5. Select the same footer element by its class of "blog-footer". This time give it a background-color of green.
+6. Select the same footer element by its id of "blog-footer-page-one". Give it a background-color of red. Which one wins? */
+
+/* .pink-background{
+    background-color: pink;
+} */
+
+/* .blog-footer {
+    background-color: green;
+  }
+
+
+
+footer{
+   background-color: blue;
+   height: 15vh;
+}
+
+#blog-footer-page-one{
+    background-color: red;
+} */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 4em;
+    margin-left: 3em;
+}
+
+/* Only select divs whose immediate parent is a section */
+section > div {
+    border: 1px solid gray;
+    width: 15vw;
+    margin: 1em;
+    padding: 1em;
+
+}
+
+section > div:hover{
+    background-color: yellow;
+}
+
+div img {
+    width: 80%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div:first-child{
+    background-color: cornflowerblue;
+}
+
+section div:first-child:hover{
+    background-color: yellow;
+}
+
+h3:first-child {
+    color: navy;
+}
+
+div:nth-child(3){
+    background-color: pink;
+}
+
+div:last-child{
+    background-color: purple;
+}
+
+/* SIBLING SELECTORS */
+
+.bill-container + div {
+    background-color: hotpink;
+}
+
+.bill-container ~ div {
+    background-color: lightgreen;
+}
+
+/* Hover  */
+div img:hover {
+    width: 100%;
+}
+
+
+
